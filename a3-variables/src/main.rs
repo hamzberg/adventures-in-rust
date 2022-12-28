@@ -71,5 +71,21 @@ fn main() {
     //Tuple
     let tup: (i64, f32, u16) = (250, 3.2, 12);
     let (f, g, h) = tup;
-    println!("{f}, {g}, {h}");
+    println!("Contents of the tuple: {f}, {g}, {h}");
+
+    //Connecting directly to tuple contents
+    let tupped: (i64, f32, u16) = (300, 5.6, 4);
+    let three_hundred = tupped.0;
+    let five_point_six = tupped.1;
+    let four = tupped.2;
+    println!("My favorite numbers are: {three_hundred}, {five_point_six}, and {four}.");
+
+    //Arrays
+    let example_array = [2, 4, 6, 8, 0];
+    let another_array: [i64; 3] = [23, 34, 45];
+    let one_more_array = [4; 8];
+    println!(
+        "Of all the numbers, {}, {}, and {} are the best.",
+        example_array[0], another_array[1], one_more_array[2]
+    );
 }
