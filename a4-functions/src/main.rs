@@ -12,6 +12,10 @@ fn main() {
     let z = the_number_five();
 
     println!("The value of z is: {z}.");
+
+    let a = plus_one(5);
+
+    println!("The value of a is: {a}");
 }
 
 fn another_function() {
@@ -40,4 +44,8 @@ fn expression() {
 
 fn the_number_five() -> i32 {
     5
+}
+
+fn plus_one(x: i32) -> i32 {
+    x + 1
 }
